@@ -23,39 +23,45 @@ Software installation
 
 From the Terminal in the home directory:
 
-1.  
-```
-sudo apt update && sudo apt upgrade -y   # Update the Raspberry Pi
-```
-2.
-```
-python -m venv ~/venv                    # create a virtual environment
-```
+1. Update the Raspberry Pi
+    ```
+    $ sudo apt update && sudo apt upgrade -y
+    ```
+2. Create a virtual Python environmnet in which to install the software
+    ```
+    $ python -m venv ~/venv
+    ```
 
-3.
-```
-source ~/venv/bin/activate      # start up the virtual environment
-```
-Optional step: modify `.bashrc` to include this same line so that the virtual environment is launched every time a Terminal window is opened.
+3. Start the virtual environment
+    ```
+    $ source ~/venv/bin/activate
+    ```
+    Optional step: modify `.bashrc` to include this same line so that the virtual environment is launched every time a Terminal window is opened.
 
-4.    
-```
-sudo apt install python3-pip             # install pip3
-```
+4. Install `pip3` Python package manager (may already be installed)
+    ```
+    $ sudo apt install python3-pip
+    ```
 
-5.    
-```
-pip3 install opencv-python       # download and install opencv module
-```
+5. Download and install the opencv module (will take a few minutes, depending on connection speed)   
+    ```
+    $ pip3 install opencv-python
+    ```
+
+6. Optional step: Install `xscreensaver`, which can be used to disable the screen sleeping. This can be useful when presenting at a booth for hours at a time.
+    ```
+    $ sudo apt install xscreensaver
+    ```
+    Once installed, launch the app and use the graphical interface to disable the screensaver.
 
 Running the demonstration
 -------------------------
 
 1. Put the `face_detection.py` file on the Desktop of the Raspberry Pi
 2. Open a Terminal and run the command
-```
-python ~/Desktop/face_detection.py
-```
+    ```
+    $ python ~/Desktop/face_detection.py
+    ```
 3. The environment may allow the window to be resized. If possible, expand the window so that demo viewers are able to better see the face recognition analysis.
 4. Ask viewers to tilt their head to one side, or to obscure part of their face with hair or a mask. Does the face recognition still work?
 5. Does the program work on faces in a darkened room? Does it work on faces with darker complexions?

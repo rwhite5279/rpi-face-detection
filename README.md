@@ -62,11 +62,14 @@ Running the demonstration
     ```
     $ python ~/Desktop/face_detection.py
     ```
+![Person with face identified by a box around it](./img/boxed_face.jpg)
+
 3. The environment may allow the window to be resized. If possible, expand the window so that demo viewers are able to better see the face recognition analysis.
 4. Ask viewers to tilt their head to one side, or to obscure part of their face with hair or a mask. Does the face recognition still work?
 5. Does the program work on faces in a darkened room? Does it work on faces with darker complexions?
 6. Are there any features in the camera's view that the algorithm mistakenly identifies as faces? Why might that be?
 7. Use the 30x Zoom feature in the window to display the Red-Green-Blue values of each pixel. Note that algorithms don't "know" what a face looks like. They see patterns of numbers, and things that are "faces" generally have a certain pattern of numbers that an algorithm can identify.
+![Expanded view of image showing pixels and RGB values](./img/pixels_closeup.jpg)
 
 Licenses
 =======
